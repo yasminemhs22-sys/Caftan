@@ -7,7 +7,7 @@ type Variant = 'primary' | 'outline' | 'ghost'
 interface BaseProps {
   variant?: Variant
   className?: string
-  children: React.ReactNode
+  children?: React.ReactNode
 }
 
 const variantClasses: Record<Variant, string> = {
