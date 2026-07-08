@@ -1,0 +1,65 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/*
+ * Couleurs de marque en variables CSS (triplets RGB, sans "rgb()" ni "#"),
+ * consommées par tailwind.config.ts via rgb(var(--color-x) / <alpha-value>).
+ * Ça permet à Tailwind de garder le support des opacités (bg-noir/50 etc.)
+ * tout en laissant la page Réglages du Dashboard admin réécrire ces valeurs
+ * au runtime (voir ThemeVars.tsx, rendu dans le <head> du layout racine).
+ * Valeurs par défaut = identité visuelle d'origine de La Casa Del Caftan.
+ */
+:root {
+  --color-noir: 10 10 10;
+  --color-noir-soft: 22 21 19;
+  --color-creme: 250 249 246;
+  --color-dore: 212 175 55;
+  --color-dore-light: 232 199 102;
+  --color-dore-dark: 184 148 44;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  @apply bg-creme text-noir font-sans antialiased;
+}
+
+/* Bascule automatique de police pour l'arabe (le Playfair/Inter latin ne
+   couvre pas les glyphes arabes) */
+html[lang='ar'] body {
+  font-family: var(--font-ar-sans), sans-serif;
+}
+html[lang='ar'] h1,
+html[lang='ar'] h2,
+html[lang='ar'] h3,
+html[lang='ar'] .font-display {
+  font-family: var(--font-ar-display), serif;
+}
+
+/* Respect du mouvement réduit */
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* Focus clavier visible (accessibilité) */
+a:focus-visible,
+button:focus-visible,
+input:focus-visible,
+textarea:focus-visible,
+select:focus-visible {
+  outline: 2px solid rgb(var(--color-dore));
+  outline-offset: 2px;
+}
+
+::selection {
+  background-color: rgb(var(--color-dore));
+  color: rgb(var(--color-noir));
+}

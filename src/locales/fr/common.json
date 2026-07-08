@@ -1,0 +1,242 @@
+{
+  "nav": {
+    "home": "Accueil",
+    "shop": "Boutique",
+    "collections": "Collections",
+    "about": "À propos",
+    "contact": "Contact",
+    "faq": "FAQ",
+    "cart": "Panier",
+    "account": "Mon compte",
+    "wishlist": "Favoris",
+    "newArrivals": "Nouveautés",
+    "promotions": "Promotions",
+    "login": "Connexion"
+  },
+  "hero": {
+    "eyebrow": "Maison de haute couture",
+    "title": "L'élégance du caftan, réinventée",
+    "subtitle": "Des pièces d'exception pensées pour la femme d'aujourd'hui, entre héritage et modernité.",
+    "cta": "Découvrir la collection"
+  },
+  "common": {
+    "addToCart": "Ajouter au panier",
+    "outOfStock": "Rupture de stock",
+    "inStock": "En stock",
+    "search": "Rechercher",
+    "loading": "Chargement...",
+    "seeMore": "Voir plus",
+    "seeAll": "Voir tout",
+    "send": "Envoyer",
+    "close": "Fermer",
+    "currency": "DA",
+    "new": "Nouveau",
+    "promo": "Promo",
+    "required": "Ce champ est requis",
+    "invalidEmail": "Adresse e-mail invalide"
+  },
+  "shop": {
+    "title": "La Boutique",
+    "filters": "Filtres",
+    "priceRange": "Fourchette de prix",
+    "category": "Catégorie",
+    "color": "Couleur",
+    "size": "Taille",
+    "availability": "Disponibilité",
+    "inStockOnly": "En stock uniquement",
+    "sortBy": "Trier par",
+    "newest": "Nouveautés",
+    "priceAsc": "Prix croissant",
+    "priceDesc": "Prix décroissant",
+    "popularity": "Popularité",
+    "noProducts": "Aucun produit ne correspond à votre recherche pour le moment.",
+    "resetFilters": "Réinitialiser"
+  },
+  "product": {
+    "description": "Description",
+    "similarProducts": "Vous aimerez aussi",
+    "reviews": "Avis clients",
+    "noReviews": "Aucun avis pour le moment.",
+    "writeReview": "Laisser un avis",
+    "loginToReview": "Connectez-vous pour laisser un avis sur ce produit.",
+    "reviewPlaceholder": "Votre avis (optionnel)",
+    "submitReview": "Envoyer mon avis",
+    "reviewSubmitted": "Merci ! Votre avis a été envoyé et sera visible après validation.",
+    "reviewModerationNote": "Votre avis sera visible publiquement après validation par notre équipe.",
+    "share": "Partager",
+    "reference": "Référence",
+    "quantity": "Quantité",
+    "selectColor": "Couleur",
+    "selectSize": "Taille",
+    "availability": "Disponibilité",
+    "addToWishlist": "Ajouter aux favoris",
+    "removeFromWishlist": "Retirer des favoris"
+  },
+  "inquiryForm": {
+    "title": "Une question sur cet article ?",
+    "subtitle": "Laissez-nous vos coordonnées, nous vous recontactons rapidement.",
+    "firstName": "Prénom",
+    "lastName": "Nom",
+    "phone": "Téléphone",
+    "email": "E-mail",
+    "city": "Ville",
+    "message": "Votre message",
+    "submit": "Envoyer la demande",
+    "success": "Votre demande a bien été envoyée. Nous vous recontactons très vite.",
+    "error": "Une erreur est survenue. Merci de réessayer."
+  },
+  "cart": {
+    "title": "Votre panier",
+    "empty": "Votre panier est vide pour le moment.",
+    "startShopping": "Découvrir la boutique",
+    "subtotal": "Sous-total",
+    "shipping": "Livraison",
+    "shippingNote": "Calculée à la commande",
+    "total": "Total",
+    "remove": "Supprimer",
+    "quantity": "Quantité",
+    "checkout": "Passer la commande"
+  },
+  "checkout": {
+    "title": "Finaliser la commande",
+    "shippingInfo": "Informations de livraison",
+    "firstName": "Prénom",
+    "lastName": "Nom",
+    "phone": "Téléphone",
+    "email": "E-mail",
+    "address": "Adresse",
+    "city": "Ville",
+    "notes": "Notes (optionnel)",
+    "paymentMethod": "Mode de paiement",
+    "cod": "Paiement à la livraison",
+    "bankTransfer": "Virement bancaire",
+    "online": "Paiement en ligne par carte",
+    "redirecting": "Redirection vers le paiement...",
+    "placeOrder": "Confirmer la commande",
+    "orderSuccess": "Commande confirmée !",
+    "orderSuccessDetail": "Merci pour votre commande. Notre équipe vous contactera très prochainement pour la confirmer.",
+    "orderNumber": "Numéro de commande",
+    "backToShop": "Retour à la boutique"
+  },
+  "auth": {
+    "loginTitle": "Connexion",
+    "registerTitle": "Créer un compte",
+    "forgotTitle": "Mot de passe oublié",
+    "forgotSubtitle": "Recevez un lien de réinitialisation par e-mail.",
+    "email": "E-mail",
+    "password": "Mot de passe",
+    "confirmPassword": "Confirmer le mot de passe",
+    "firstName": "Prénom",
+    "lastName": "Nom",
+    "submit": "Valider",
+    "loginSubmit": "Se connecter",
+    "registerSubmit": "Créer mon compte",
+    "sendLink": "Envoyer le lien",
+    "noAccount": "Pas encore de compte ?",
+    "hasAccount": "Déjà un compte ?",
+    "forgotLink": "Mot de passe oublié ?",
+    "backToLogin": "Retour à la connexion",
+    "linkSent": "Si un compte existe avec cet e-mail, un lien de réinitialisation vient d'être envoyé."
+  },
+  "footer": {
+    "quickLinks": "Liens rapides",
+    "contact": "Contact",
+    "newsletter": "Newsletter",
+    "newsletterText": "Recevez nos nouveautés et offres exclusives.",
+    "newsletterPlaceholder": "Votre e-mail",
+    "subscribe": "S'inscrire",
+    "subscribeSuccess": "Merci pour votre inscription !",
+    "rights": "Tous droits réservés.",
+    "openingHours": "Horaires",
+    "followUs": "Suivez-nous"
+  },
+  "contact": {
+    "title": "Contactez-nous",
+    "subtitle": "Une question ? Notre équipe est à votre écoute.",
+    "address": "Adresse",
+    "phone": "Téléphone",
+    "email": "E-mail",
+    "callUs": "Appeler",
+    "whatsappUs": "WhatsApp",
+    "formTitle": "Envoyez-nous un message",
+    "hours": "Horaires d'ouverture"
+  },
+  "faq": {
+    "title": "Questions fréquentes",
+    "subtitle": "Tout ce qu'il faut savoir avant de commander."
+  },
+  "about": {
+    "title": "À propos de La Casa Del Caftan",
+    "galleryTitle": "Notre boutique"
+  },
+  "notFound": {
+    "title": "404",
+    "message": "Oups, cette page n'existe pas ou plus.",
+    "backHome": "Retour à l'accueil"
+  },
+  "home": {
+    "newArrivals": "Nouveautés",
+    "popularProducts": "Produits populaires",
+    "collectionsTitle": "Nos collections",
+    "galleryTitle": "L'univers La Casa Del Caftan",
+    "testimonialsTitle": "Ce qu'en disent nos clientes"
+  },
+  "account": {
+    "title": "Mon compte",
+    "profileTab": "Mes informations",
+    "ordersTab": "Mes commandes",
+    "firstName": "Prénom",
+    "lastName": "Nom",
+    "phone": "Téléphone",
+    "city": "Ville",
+    "address": "Adresse",
+    "save": "Enregistrer",
+    "saved": "Vos informations ont été mises à jour.",
+    "logout": "Déconnexion",
+    "noOrders": "Vous n'avez pas encore passé de commande.",
+    "orderNumber": "Commande",
+    "orderTotal": "Total",
+    "orderDate": "Date",
+    "viewWishlist": "Voir mes favoris",
+    "status": {
+      "pending": "En attente",
+      "confirmed": "Confirmée",
+      "processing": "En préparation",
+      "shipped": "Expédiée",
+      "delivered": "Livrée",
+      "cancelled": "Annulée"
+    },
+    "paymentStatus": {
+      "pending": "Paiement en attente",
+      "paid": "Payée",
+      "failed": "Paiement échoué",
+      "refunded": "Remboursée",
+      "not_applicable": ""
+    }
+  },
+  "collections": {
+    "title": "Nos collections",
+    "noCollections": "Aucune collection pour le moment.",
+    "viewCollection": "Découvrir",
+    "noProducts": "Aucun produit dans cette collection pour le moment.",
+    "backToCollections": "Toutes les collections"
+  },
+  "favoris": {
+    "title": "Mes favoris",
+    "empty": "Vous n'avez pas encore ajouté de favoris.",
+    "browseShop": "Découvrir la boutique"
+  },
+  "days": {
+    "lundi": "Lundi",
+    "mardi": "Mardi",
+    "mercredi": "Mercredi",
+    "jeudi": "Jeudi",
+    "vendredi": "Vendredi",
+    "samedi": "Samedi",
+    "dimanche": "Dimanche"
+  },
+  "legal": {
+    "privacyTitle": "Politique de confidentialité",
+    "termsTitle": "Conditions générales de vente"
+  }
+}

@@ -1,0 +1,242 @@
+{
+  "nav": {
+    "home": "الرئيسية",
+    "shop": "المتجر",
+    "collections": "المجموعات",
+    "about": "من نحن",
+    "contact": "اتصل بنا",
+    "faq": "الأسئلة الشائعة",
+    "cart": "السلة",
+    "account": "حسابي",
+    "wishlist": "المفضلة",
+    "newArrivals": "وصل حديثًا",
+    "promotions": "التخفيضات",
+    "login": "تسجيل الدخول"
+  },
+  "hero": {
+    "eyebrow": "دار للأزياء الراقية",
+    "title": "أناقة القفطان، بروح عصرية",
+    "subtitle": "قطع استثنائية صُممت للمرأة العصرية، بين الإرث والحداثة.",
+    "cta": "اكتشفي المجموعة"
+  },
+  "common": {
+    "addToCart": "أضف إلى السلة",
+    "outOfStock": "غير متوفر",
+    "inStock": "متوفر",
+    "search": "بحث",
+    "loading": "جارٍ التحميل...",
+    "seeMore": "عرض المزيد",
+    "seeAll": "عرض الكل",
+    "send": "إرسال",
+    "close": "إغلاق",
+    "currency": "دج",
+    "new": "جديد",
+    "promo": "تخفيض",
+    "required": "هذا الحقل إلزامي",
+    "invalidEmail": "البريد الإلكتروني غير صحيح"
+  },
+  "shop": {
+    "title": "المتجر",
+    "filters": "التصفية",
+    "priceRange": "نطاق السعر",
+    "category": "الفئة",
+    "color": "اللون",
+    "size": "المقاس",
+    "availability": "التوفر",
+    "inStockOnly": "المتوفر فقط",
+    "sortBy": "الترتيب حسب",
+    "newest": "الأحدث",
+    "priceAsc": "السعر: من الأقل للأعلى",
+    "priceDesc": "السعر: من الأعلى للأقل",
+    "popularity": "الأكثر رواجاً",
+    "noProducts": "لا توجد منتجات مطابقة لبحثكم حالياً.",
+    "resetFilters": "إعادة تعيين"
+  },
+  "product": {
+    "description": "الوصف",
+    "similarProducts": "قد يعجبك أيضاً",
+    "reviews": "تقييمات العملاء",
+    "noReviews": "لا توجد تقييمات بعد.",
+    "writeReview": "أضيفي تقييمًا",
+    "loginToReview": "سجّلي الدخول لإضافة تقييم على هذا المنتج.",
+    "reviewPlaceholder": "تقييمك (اختياري)",
+    "submitReview": "إرسال تقييمي",
+    "reviewSubmitted": "شكرًا لك! تم إرسال تقييمك وسيظهر بعد المراجعة.",
+    "reviewModerationNote": "سيظهر تقييمك للعامة بعد موافقة فريقنا عليه.",
+    "share": "مشاركة",
+    "reference": "المرجع",
+    "quantity": "الكمية",
+    "selectColor": "اللون",
+    "selectSize": "المقاس",
+    "availability": "التوفر",
+    "addToWishlist": "أضف إلى المفضلة",
+    "removeFromWishlist": "إزالة من المفضلة"
+  },
+  "inquiryForm": {
+    "title": "لديك سؤال عن هذا المنتج؟",
+    "subtitle": "اتركي معلومات التواصل وسنعاود الاتصال بكم قريباً.",
+    "firstName": "الاسم",
+    "lastName": "اللقب",
+    "phone": "الهاتف",
+    "email": "البريد الإلكتروني",
+    "city": "المدينة",
+    "message": "رسالتكم",
+    "submit": "إرسال الطلب",
+    "success": "تم إرسال طلبكم بنجاح، سنتواصل معكم قريباً.",
+    "error": "حدث خطأ، يرجى المحاولة مرة أخرى."
+  },
+  "cart": {
+    "title": "سلة التسوق",
+    "empty": "سلتكم فارغة حالياً.",
+    "startShopping": "تصفّح المتجر",
+    "subtotal": "المجموع الفرعي",
+    "shipping": "التوصيل",
+    "shippingNote": "يُحتسب عند الطلب",
+    "total": "المجموع الكلي",
+    "remove": "حذف",
+    "quantity": "الكمية",
+    "checkout": "إتمام الطلب"
+  },
+  "checkout": {
+    "title": "إتمام الطلب",
+    "shippingInfo": "معلومات التوصيل",
+    "firstName": "الاسم",
+    "lastName": "اللقب",
+    "phone": "الهاتف",
+    "email": "البريد الإلكتروني",
+    "address": "العنوان",
+    "city": "المدينة",
+    "notes": "ملاحظات (اختياري)",
+    "paymentMethod": "طريقة الدفع",
+    "cod": "الدفع عند الاستلام",
+    "bankTransfer": "تحويل بنكي",
+    "online": "الدفع الإلكتروني بالبطاقة",
+    "redirecting": "جارٍ التحويل إلى صفحة الدفع...",
+    "placeOrder": "تأكيد الطلب",
+    "orderSuccess": "تم تأكيد طلبكم!",
+    "orderSuccessDetail": "شكراً لطلبكم. سيتواصل معكم فريقنا قريباً لتأكيده.",
+    "orderNumber": "رقم الطلب",
+    "backToShop": "العودة إلى المتجر"
+  },
+  "auth": {
+    "loginTitle": "تسجيل الدخول",
+    "registerTitle": "إنشاء حساب",
+    "forgotTitle": "نسيت كلمة المرور",
+    "forgotSubtitle": "استلمي رابط إعادة التعيين عبر البريد الإلكتروني.",
+    "email": "البريد الإلكتروني",
+    "password": "كلمة المرور",
+    "confirmPassword": "تأكيد كلمة المرور",
+    "firstName": "الاسم",
+    "lastName": "اللقب",
+    "submit": "تأكيد",
+    "loginSubmit": "تسجيل الدخول",
+    "registerSubmit": "إنشاء حسابي",
+    "sendLink": "إرسال الرابط",
+    "noAccount": "ليس لديك حساب؟",
+    "hasAccount": "لديك حساب بالفعل؟",
+    "forgotLink": "نسيت كلمة المرور؟",
+    "backToLogin": "العودة لتسجيل الدخول",
+    "linkSent": "إذا كان هناك حساب مرتبط بهذا البريد، فسيصلكم رابط إعادة التعيين الآن."
+  },
+  "footer": {
+    "quickLinks": "روابط سريعة",
+    "contact": "اتصل بنا",
+    "newsletter": "النشرة الإخبارية",
+    "newsletterText": "استلمي أحدث المنتجات والعروض الحصرية.",
+    "newsletterPlaceholder": "بريدكم الإلكتروني",
+    "subscribe": "اشتراك",
+    "subscribeSuccess": "شكراً لاشتراككم!",
+    "rights": "جميع الحقوق محفوظة.",
+    "openingHours": "ساعات العمل",
+    "followUs": "تابعونا"
+  },
+  "contact": {
+    "title": "اتصل بنا",
+    "subtitle": "لديكم سؤال؟ فريقنا في خدمتكم.",
+    "address": "العنوان",
+    "phone": "الهاتف",
+    "email": "البريد الإلكتروني",
+    "callUs": "اتصل بنا",
+    "whatsappUs": "واتساب",
+    "formTitle": "أرسلوا لنا رسالة",
+    "hours": "ساعات العمل"
+  },
+  "faq": {
+    "title": "الأسئلة الشائعة",
+    "subtitle": "كل ما تحتاجون معرفته قبل الطلب."
+  },
+  "about": {
+    "title": "عن La Casa Del Caftan",
+    "galleryTitle": "متجرنا"
+  },
+  "notFound": {
+    "title": "404",
+    "message": "عذراً، هذه الصفحة لم تعد موجودة.",
+    "backHome": "العودة للرئيسية"
+  },
+  "home": {
+    "newArrivals": "وصل حديثاً",
+    "popularProducts": "المنتجات الأكثر رواجاً",
+    "collectionsTitle": "مجموعاتنا",
+    "galleryTitle": "عالم La Casa Del Caftan",
+    "testimonialsTitle": "ماذا تقول عميلاتنا"
+  },
+  "account": {
+    "title": "حسابي",
+    "profileTab": "معلوماتي",
+    "ordersTab": "طلباتي",
+    "firstName": "الاسم",
+    "lastName": "اللقب",
+    "phone": "الهاتف",
+    "city": "المدينة",
+    "address": "العنوان",
+    "save": "حفظ",
+    "saved": "تم تحديث معلوماتك بنجاح.",
+    "logout": "تسجيل الخروج",
+    "noOrders": "لم تقومي بأي طلب بعد.",
+    "orderNumber": "الطلب",
+    "orderTotal": "المجموع",
+    "orderDate": "التاريخ",
+    "viewWishlist": "عرض المفضلة",
+    "status": {
+      "pending": "قيد الانتظار",
+      "confirmed": "مؤكد",
+      "processing": "قيد التحضير",
+      "shipped": "تم الشحن",
+      "delivered": "تم التسليم",
+      "cancelled": "ملغى"
+    },
+    "paymentStatus": {
+      "pending": "الدفع قيد الانتظار",
+      "paid": "مدفوعة",
+      "failed": "فشل الدفع",
+      "refunded": "تم الاسترجاع",
+      "not_applicable": ""
+    }
+  },
+  "collections": {
+    "title": "مجموعاتنا",
+    "noCollections": "لا توجد مجموعات حاليًا.",
+    "viewCollection": "اكتشفي",
+    "noProducts": "لا توجد منتجات في هذه المجموعة حاليًا.",
+    "backToCollections": "كل المجموعات"
+  },
+  "favoris": {
+    "title": "المفضلة",
+    "empty": "لم تضيفي أي عنصر إلى المفضلة بعد.",
+    "browseShop": "تصفّحي المتجر"
+  },
+  "days": {
+    "lundi": "الإثنين",
+    "mardi": "الثلاثاء",
+    "mercredi": "الأربعاء",
+    "jeudi": "الخميس",
+    "vendredi": "الجمعة",
+    "samedi": "السبت",
+    "dimanche": "الأحد"
+  },
+  "legal": {
+    "privacyTitle": "سياسة الخصوصية",
+    "termsTitle": "الشروط والأحكام العامة للبيع"
+  }
+}

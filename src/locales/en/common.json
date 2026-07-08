@@ -1,0 +1,242 @@
+{
+  "nav": {
+    "home": "Home",
+    "shop": "Shop",
+    "collections": "Collections",
+    "about": "About",
+    "contact": "Contact",
+    "faq": "FAQ",
+    "cart": "Cart",
+    "account": "My Account",
+    "wishlist": "Wishlist",
+    "newArrivals": "New Arrivals",
+    "promotions": "Sale",
+    "login": "Login"
+  },
+  "hero": {
+    "eyebrow": "Haute couture house",
+    "title": "The elegance of the caftan, reinvented",
+    "subtitle": "Exceptional pieces designed for today's woman, between heritage and modernity.",
+    "cta": "Discover the collection"
+  },
+  "common": {
+    "addToCart": "Add to cart",
+    "outOfStock": "Out of stock",
+    "inStock": "In stock",
+    "search": "Search",
+    "loading": "Loading...",
+    "seeMore": "See more",
+    "seeAll": "See all",
+    "send": "Send",
+    "close": "Close",
+    "currency": "DZD",
+    "new": "New",
+    "promo": "Sale",
+    "required": "This field is required",
+    "invalidEmail": "Invalid email address"
+  },
+  "shop": {
+    "title": "Shop",
+    "filters": "Filters",
+    "priceRange": "Price range",
+    "category": "Category",
+    "color": "Color",
+    "size": "Size",
+    "availability": "Availability",
+    "inStockOnly": "In stock only",
+    "sortBy": "Sort by",
+    "newest": "Newest",
+    "priceAsc": "Price: low to high",
+    "priceDesc": "Price: high to low",
+    "popularity": "Popularity",
+    "noProducts": "No products match your search right now.",
+    "resetFilters": "Reset"
+  },
+  "product": {
+    "description": "Description",
+    "similarProducts": "You may also like",
+    "reviews": "Customer reviews",
+    "noReviews": "No reviews yet.",
+    "writeReview": "Write a review",
+    "loginToReview": "Log in to leave a review on this product.",
+    "reviewPlaceholder": "Your review (optional)",
+    "submitReview": "Submit my review",
+    "reviewSubmitted": "Thank you! Your review has been submitted and will appear once approved.",
+    "reviewModerationNote": "Your review will be publicly visible after approval by our team.",
+    "share": "Share",
+    "reference": "Reference",
+    "quantity": "Quantity",
+    "selectColor": "Color",
+    "selectSize": "Size",
+    "availability": "Availability",
+    "addToWishlist": "Add to wishlist",
+    "removeFromWishlist": "Remove from wishlist"
+  },
+  "inquiryForm": {
+    "title": "A question about this item?",
+    "subtitle": "Leave your details and we'll get back to you shortly.",
+    "firstName": "First name",
+    "lastName": "Last name",
+    "phone": "Phone",
+    "email": "Email",
+    "city": "City",
+    "message": "Your message",
+    "submit": "Send request",
+    "success": "Your request has been sent. We'll be in touch very soon.",
+    "error": "Something went wrong. Please try again."
+  },
+  "cart": {
+    "title": "Your cart",
+    "empty": "Your cart is currently empty.",
+    "startShopping": "Browse the shop",
+    "subtotal": "Subtotal",
+    "shipping": "Shipping",
+    "shippingNote": "Calculated at checkout",
+    "total": "Total",
+    "remove": "Remove",
+    "quantity": "Quantity",
+    "checkout": "Checkout"
+  },
+  "checkout": {
+    "title": "Checkout",
+    "shippingInfo": "Shipping information",
+    "firstName": "First name",
+    "lastName": "Last name",
+    "phone": "Phone",
+    "email": "Email",
+    "address": "Address",
+    "city": "City",
+    "notes": "Notes (optional)",
+    "paymentMethod": "Payment method",
+    "cod": "Cash on delivery",
+    "bankTransfer": "Bank transfer",
+    "online": "Pay online by card",
+    "redirecting": "Redirecting to payment...",
+    "placeOrder": "Place order",
+    "orderSuccess": "Order confirmed!",
+    "orderSuccessDetail": "Thank you for your order. Our team will contact you shortly to confirm it.",
+    "orderNumber": "Order number",
+    "backToShop": "Back to shop"
+  },
+  "auth": {
+    "loginTitle": "Login",
+    "registerTitle": "Create an account",
+    "forgotTitle": "Forgot password",
+    "forgotSubtitle": "Receive a reset link by email.",
+    "email": "Email",
+    "password": "Password",
+    "confirmPassword": "Confirm password",
+    "firstName": "First name",
+    "lastName": "Last name",
+    "submit": "Submit",
+    "loginSubmit": "Sign in",
+    "registerSubmit": "Create my account",
+    "sendLink": "Send link",
+    "noAccount": "Don't have an account?",
+    "hasAccount": "Already have an account?",
+    "forgotLink": "Forgot password?",
+    "backToLogin": "Back to login",
+    "linkSent": "If an account exists for this email, a reset link has just been sent."
+  },
+  "footer": {
+    "quickLinks": "Quick links",
+    "contact": "Contact",
+    "newsletter": "Newsletter",
+    "newsletterText": "Get our latest arrivals and exclusive offers.",
+    "newsletterPlaceholder": "Your email",
+    "subscribe": "Subscribe",
+    "subscribeSuccess": "Thank you for subscribing!",
+    "rights": "All rights reserved.",
+    "openingHours": "Opening hours",
+    "followUs": "Follow us"
+  },
+  "contact": {
+    "title": "Contact us",
+    "subtitle": "A question? Our team is here to help.",
+    "address": "Address",
+    "phone": "Phone",
+    "email": "Email",
+    "callUs": "Call us",
+    "whatsappUs": "WhatsApp",
+    "formTitle": "Send us a message",
+    "hours": "Opening hours"
+  },
+  "faq": {
+    "title": "Frequently asked questions",
+    "subtitle": "Everything you need to know before ordering."
+  },
+  "about": {
+    "title": "About La Casa Del Caftan",
+    "galleryTitle": "Our boutique"
+  },
+  "notFound": {
+    "title": "404",
+    "message": "Oops, this page doesn't exist anymore.",
+    "backHome": "Back to home"
+  },
+  "home": {
+    "newArrivals": "New arrivals",
+    "popularProducts": "Popular products",
+    "collectionsTitle": "Our collections",
+    "galleryTitle": "The La Casa Del Caftan universe",
+    "testimonialsTitle": "What our clients say"
+  },
+  "account": {
+    "title": "My Account",
+    "profileTab": "My Information",
+    "ordersTab": "My Orders",
+    "firstName": "First name",
+    "lastName": "Last name",
+    "phone": "Phone",
+    "city": "City",
+    "address": "Address",
+    "save": "Save",
+    "saved": "Your information has been updated.",
+    "logout": "Log out",
+    "noOrders": "You haven't placed any orders yet.",
+    "orderNumber": "Order",
+    "orderTotal": "Total",
+    "orderDate": "Date",
+    "viewWishlist": "View my wishlist",
+    "status": {
+      "pending": "Pending",
+      "confirmed": "Confirmed",
+      "processing": "Processing",
+      "shipped": "Shipped",
+      "delivered": "Delivered",
+      "cancelled": "Cancelled"
+    },
+    "paymentStatus": {
+      "pending": "Payment pending",
+      "paid": "Paid",
+      "failed": "Payment failed",
+      "refunded": "Refunded",
+      "not_applicable": ""
+    }
+  },
+  "collections": {
+    "title": "Our Collections",
+    "noCollections": "No collections yet.",
+    "viewCollection": "Discover",
+    "noProducts": "No products in this collection yet.",
+    "backToCollections": "All collections"
+  },
+  "favoris": {
+    "title": "My Wishlist",
+    "empty": "You haven't added any favorites yet.",
+    "browseShop": "Browse the shop"
+  },
+  "days": {
+    "lundi": "Monday",
+    "mardi": "Tuesday",
+    "mercredi": "Wednesday",
+    "jeudi": "Thursday",
+    "vendredi": "Friday",
+    "samedi": "Saturday",
+    "dimanche": "Sunday"
+  },
+  "legal": {
+    "privacyTitle": "Privacy Policy",
+    "termsTitle": "Terms of Sale"
+  }
+}
