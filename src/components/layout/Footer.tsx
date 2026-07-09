@@ -155,6 +155,10 @@ export function Footer({ logoUrl, socialLinks, contactInfo, tagline }: Props) {
         <Link href="/admin" className="text-creme/40 underline hover:text-dore">
           Espace Pro
         </Link>
+        {" · "}
+        <Link href="/admin" className="text-creme/40 underline hover:text-dore">
+          Espace Pro
+        </Link>
       </div>
     </footer>
   )
