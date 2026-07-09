@@ -2,8 +2,9 @@
 
 import { useState } from 'react'
 import Image from 'next/image'
+import Link from 'next/link'
 import { useRouter } from 'next/navigation'
-import { Trash2 } from 'lucide-react'
+import { Trash2, Pencil } from 'lucide-react'
 import { createClient } from '@/lib/supabase/client'
 import { getLocalized, formatPrice } from '@/lib/utils'
 import { ProductImagePlaceholder } from '@/components/ui/ProductImagePlaceholder'
@@ -85,14 +86,19 @@ export function ProductsTable({ products }: { products: Product[] }) {
                   </button>
                 </td>
                 <td className="p-4">
-                  <button
-                    onClick={() => handleDelete(product)}
-                    disabled={busyId === product.id}
-                    aria-label="Supprimer"
-                    className="text-noir/40 hover:text-red-600"
-                  >
-                    <Trash2 size={16} strokeWidth={1.5} />
-                  </button>
+                  <div className="flex items-center gap-3">
+                    <Link href={`/admin/produits/${product.id}`} aria-label="Modifier" className="text-noir/40 hover:text-dore-dark">
+                      <Pencil size={16} strokeWidth={1.5} />
+                    </Link>
+                    <button
+                      onClick={() => handleDelete(product)}
+                      disabled={busyId === product.id}
+                      aria-label="Supprimer"
+                      className="text-noir/40 hover:text-red-600"
+                    >
+                      <Trash2 size={16} strokeWidth={1.5} />
+                    </button>
+                  </div>
                 </td>
               </tr>
             )
