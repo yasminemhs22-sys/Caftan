@@ -150,7 +150,11 @@ export function Footer({ logoUrl, socialLinks, contactInfo, tagline }: Props) {
       </div>
 
       <div className="border-t border-dore/10 px-6 py-5 text-center text-xs text-creme/40 md:px-8">
-        © {year} La Casa Del Caftan. {t('footer.rights')}
+        © {year} La Casa Del Caftan. {t("footer.rights")}
+        {" · "}
+        <Link href="/admin" className="text-creme/40 underline hover:text-dore">
+          Espace Pro
+        </Link>
       </div>
     </footer>
   )
