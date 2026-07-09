@@ -1,5 +1,16 @@
 import Link from 'next/link'
-import { Package, MessageSquare, Mail, ShoppingBag } from 'lucide-react'
+import {
+  Package,
+  MessageSquare,
+  Mail,
+  ShoppingBag,
+  FolderTree,
+  Layers,
+  Image as ImageIcon,
+  Star,
+  HelpCircle,
+  Settings,
+} from 'lucide-react'
 import { createClient } from '@/lib/supabase/server'
 
 async function getStats() {
@@ -54,6 +65,35 @@ export default async function AdminDashboardPage() {
         <strong className="text-noir">Statistiques de visiteurs :</strong> nécessitent un outil d'analytics
         (Plausible, Google Analytics...) qui n'est pas encore branché dans cette livraison — à connecter dans
         une prochaine itération.
+      </div>
+
+      <h2 className="mb-4 mt-12 font-display text-lg text-noir">Gérer le site</h2>
+      <div className="grid grid-cols-2 gap-3 sm:grid-cols-3 lg:grid-cols-4">
+        {[
+          { label: 'Produits', href: '/admin/produits', icon: Package },
+          { label: 'Catégories', href: '/admin/categories', icon: FolderTree },
+          { label: 'Collections', href: '/admin/collections', icon: Layers },
+          { label: 'Bannières & Hero', href: '/admin/hero', icon: ImageIcon },
+          { label: 'Galerie', href: '/admin/galerie', icon: ImageIcon },
+          { label: 'Témoignages', href: '/admin/temoignages', icon: Star },
+          { label: 'Avis clients', href: '/admin/avis', icon: Star },
+          { label: 'FAQ', href: '/admin/faq', icon: HelpCircle },
+          { label: 'Messages', href: '/admin/messages', icon: MessageSquare },
+          { label: 'Newsletter', href: '/admin/newsletter', icon: Mail },
+          { label: 'Réglages & SEO', href: '/admin/reglages', icon: Settings },
+        ].map((item) => {
+          const Icon = item.icon
+          return (
+            <Link
+              key={item.href}
+              href={item.href}
+              className="flex flex-col items-center gap-2 border border-noir/10 bg-white px-3 py-5 text-center transition-colors hover:border-dore/40 hover:bg-dore/5"
+            >
+              <Icon size={20} strokeWidth={1.5} className="text-dore-dark" />
+              <span className="text-xs text-noir">{item.label}</span>
+            </Link>
+          )
+        })}
       </div>
     </div>
   )
