@@ -60,3 +60,23 @@ export function LanguageSwitcher() {
     </div>
   )
 }
+export function MobileLanguageButtons() {
+  const { i18n } = useTranslation()
+
+  return (
+    <div className="flex gap-2">
+      {LANGUAGES.map((lang) => (
+        <button
+          key={lang.code}
+          onClick={() => i18n.changeLanguage(lang.code)}
+          className={cn(
+            'flex-1 border px-3 py-2 text-xs uppercase tracking-widest2 transition-colors',
+            lang.code === i18n.language ? 'border-dore text-dore' : 'border-creme/20 text-creme/70'
+          )}
+        >
+          {lang.short}
+        </button>
+      ))}
+    </div>
+  )
+}
