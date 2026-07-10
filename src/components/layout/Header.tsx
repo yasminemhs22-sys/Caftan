@@ -7,7 +7,7 @@ import { usePathname } from 'next/navigation'
 import { useTranslation } from 'react-i18next'
 import { Menu, X, ShoppingBag, User, Heart } from 'lucide-react'
 import { motion, AnimatePresence } from 'framer-motion'
-import { LanguageSwitcher } from './LanguageSwitcher'
+import { LanguageSwitcher, MobileLanguageButtons } from './LanguageSwitcher'
 import { useCart } from '@/context/CartContext'
 import { useWishlist } from '@/context/WishlistContext'
 import { createClient } from '@/lib/supabase/client'
@@ -148,7 +148,7 @@ export function Header({ logoUrl }: { logoUrl?: string | null }) {
                 {t('nav.wishlist')} {wishlistIds.size > 0 && `(${wishlistIds.size})`}
               </Link>
               <div className="pt-3">
-                <LanguageSwitcher />
+                <MobileLanguageButtons />
               </div>
             </div>
           </motion.nav>
