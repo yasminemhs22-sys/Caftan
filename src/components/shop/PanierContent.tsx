@@ -22,17 +22,15 @@ const checkoutSchema = z.object({
   address: z.string().min(3),
   city: z.string().min(1),
   notes: z.string().optional(),
-  payment_method: z.enum(['cod', 'bank_transfer', 'online']),
 })
 type CheckoutValues = z.infer<typeof checkoutSchema>
 
-export function PanierContent({ paymentAvailable }: { paymentAvailable: boolean }) {
+export function PanierContent() {
   const { t, i18n } = useTranslation()
   const { items, removeItem, updateQuantity, subtotal, clearCart } = useCart()
   const [step, setStep] = useState<'cart' | 'checkout' | 'success'>('cart')
   const [orderNumber, setOrderNumber] = useState('')
   const [submitError, setSubmitError] = useState(false)
-  const [redirecting, setRedirecting] = useState(false)
 
   const {
     register,
@@ -40,7 +38,6 @@ export function PanierContent({ paymentAvailable }: { paymentAvailable: boolean 
     formState: { errors, isSubmitting },
   } = useForm<CheckoutValues>({
     resolver: zodResolver(checkoutSchema),
-    defaultValues: { payment_method: 'cod' },
   })
 
   async function onSubmit(values: CheckoutValues) {
@@ -62,7 +59,7 @@ export function PanierContent({ paymentAvailable }: { paymentAvailable: boolean 
         customer_phone: values.phone,
         shipping_address: values.address,
         shipping_city: values.city,
-        payment_method: values.payment_method,
+        payment_method: 'cod',
         notes: values.notes || null,
         subtotal,
         shipping_cost: 0,
@@ -87,26 +84,6 @@ export function PanierContent({ paymentAvailable }: { paymentAvailable: boolean 
       subtotal: item.price * item.quantity,
     }))
     await supabase.from('order_items').insert(orderItems)
-
-    if (values.payment_method === 'online') {
-      setRedirecting(true)
-      try {
-        const res = await fetch('/api/checkout', {
-          method: 'POST',
-          headers: { 'Content-Type': 'application/json' },
-          body: JSON.stringify({ orderId: order.id }),
-        })
-        const data = await res.json()
-        if (!res.ok || !data.checkoutUrl) throw new Error(data.error || 'Erreur de paiement')
-        clearCart()
-        window.location.href = data.checkoutUrl
-        return
-      } catch {
-        setRedirecting(false)
-        setSubmitError(true)
-        return
-      }
-    }
 
     setOrderNumber(order_number)
     clearCart()
@@ -232,23 +209,7 @@ export function PanierContent({ paymentAvailable }: { paymentAvailable: boolean 
                 </div>
               </div>
 
-              <h2 className="mb-2 pt-4 text-xs uppercase tracking-widest2 text-noir/50">{t('checkout.paymentMethod')}</h2>
-              <div className="space-y-2">
-                <label className="flex items-center gap-3 border border-noir/20 p-3.5 text-sm">
-                  <input type="radio" value="cod" {...register('payment_method')} className="accent-dore" />
-                  {t('checkout.cod')}
-                </label>
-                <label className="flex items-center gap-3 border border-noir/20 p-3.5 text-sm">
-                  <input type="radio" value="bank_transfer" {...register('payment_method')} className="accent-dore" />
-                  {t('checkout.bankTransfer')}
-                </label>
-                {paymentAvailable && (
-                  <label className="flex items-center gap-3 border border-noir/20 p-3.5 text-sm">
-                    <input type="radio" value="online" {...register('payment_method')} className="accent-dore" />
-                    {t('checkout.online')}
-                  </label>
-                )}
-              </div>
+              <p className="pt-4 text-xs text-noir/40">{t('checkout.codOnlyNote')}</p>
 
               {submitError && <p className="text-xs text-red-600">{t('inquiryForm.error')}</p>}
             </form>
@@ -276,8 +237,8 @@ export function PanierContent({ paymentAvailable }: { paymentAvailable: boolean 
               {t('cart.checkout')}
             </Button>
           ) : (
-            <Button type="submit" form="checkout-form" disabled={isSubmitting || redirecting} className="mt-6 w-full">
-              {redirecting ? t('checkout.redirecting') : isSubmitting ? t('common.loading') : t('checkout.placeOrder')}
+            <Button type="submit" form="checkout-form" disabled={isSubmitting} className="mt-6 w-full">
+              {isSubmitting ? t('common.loading') : t('checkout.placeOrder')}
             </Button>
           )}
         </div>
