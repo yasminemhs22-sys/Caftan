@@ -46,8 +46,8 @@ export function QuickOrderForm({ product, color, size, quantity }: Props) {
 
   const filteredWilayas =
     wilayaSearch.trim().length > 0
-      ? WILAYAS.filter((w) => w.name.toLowerCase().includes(wilayaSearch.toLowerCase())).slice(0, 8)
-      : WILAYAS.slice(0, 8)
+      ? WILAYAS.filter((w) => w.name.toLowerCase().includes(wilayaSearch.toLowerCase()))
+      : WILAYAS
 
   async function handleSubmit(e: React.FormEvent) {
     e.preventDefault()
