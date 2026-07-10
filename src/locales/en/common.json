@@ -70,7 +70,17 @@
     "selectSize": "Size",
     "availability": "Availability",
     "addToWishlist": "Add to wishlist",
-    "removeFromWishlist": "Remove from wishlist"
+    "removeFromWishlist": "Remove from wishlist",
+    "orderNow": "Order now",
+    "searchWilaya": "Search for a wilaya...",
+    "noWilayaFound": "No wilaya found",
+    "commune": "Commune",
+    "deliveryType": "Delivery method",
+    "domicile": "Home delivery",
+    "bureau": "Pickup office",
+    "shippingCost": "Shipping",
+    "confirmOrder": "Confirm order",
+    "selectWilayaError": "Please select your wilaya."
   },
   "inquiryForm": {
     "title": "A question about this item?",
