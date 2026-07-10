@@ -65,32 +65,31 @@ export function QuickOrderForm({ product, color, size, quantity }: Props) {
         data: { user },
       } = await supabase.auth.getUser()
 
-      const { data: order, error: orderError } = await supabase
-        .from('orders')
-        .insert({
-          order_number,
-          user_id: user?.id || null,
-          customer_first_name: firstName,
-          customer_last_name: lastName,
-          customer_email: user?.email || 'commande-directe@sans-email.local',
-          customer_phone: phone,
-          shipping_address: commune,
-          shipping_city: selectedWilaya?.name || '',
-          shipping_wilaya: selectedWilaya?.name || '',
-          shipping_commune: commune,
-          delivery_type: deliveryType,
-          payment_method: 'cod',
-          subtotal,
-          shipping_cost: shippingCost,
-          total,
-        })
-        .select()
-        .single()
+      const orderId = crypto.randomUUID()
 
-      if (orderError || !order) throw new Error(orderError?.message || 'Erreur lors de la commande.')
+      const { error: orderError } = await supabase.from('orders').insert({
+        id: orderId,
+        order_number,
+        user_id: user?.id || null,
+        customer_first_name: firstName,
+        customer_last_name: lastName,
+        customer_email: user?.email || 'commande-directe@sans-email.local',
+        customer_phone: phone,
+        shipping_address: commune,
+        shipping_city: selectedWilaya?.name || '',
+        shipping_wilaya: selectedWilaya?.name || '',
+        shipping_commune: commune,
+        delivery_type: deliveryType,
+        payment_method: 'cod',
+        subtotal,
+        shipping_cost: shippingCost,
+        total,
+      })
+
+      if (orderError) throw new Error(orderError.message || 'Erreur lors de la commande.')
 
       await supabase.from('order_items').insert({
-        order_id: order.id,
+        order_id: orderId,
         product_id: product.id,
         product_name: product.name.fr || Object.values(product.name)[0] || '',
         color: color || null,
