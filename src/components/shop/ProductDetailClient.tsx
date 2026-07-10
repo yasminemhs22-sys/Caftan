@@ -12,6 +12,7 @@ import { ProductImagePlaceholder } from '@/components/ui/ProductImagePlaceholder
 import { ProductCard } from '@/components/shop/ProductCard'
 import { InquiryForm } from '@/components/shop/InquiryForm'
 import { ReviewForm } from '@/components/shop/ReviewForm'
+import { QuickOrderForm } from '@/components/shop/QuickOrderForm'
 import { Button } from '@/components/ui/Button'
 import type { Product } from '@/types'
 
@@ -196,6 +197,11 @@ export function ProductDetailClient({ product, similarProducts, reviews }: Props
           <p className="mt-4 text-xs text-noir/50">
             {outOfStock ? t('common.outOfStock') : `${t('common.inStock')} (${product.stock_quantity})`}
           </p>
+          {!outOfStock && (
+  <div className="mt-5">
+    <QuickOrderForm product={product} color={color} size={size} quantity={quantity} />
+  </div>
+)}
         </div>
       </div>
 
