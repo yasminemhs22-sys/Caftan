@@ -48,33 +48,32 @@ export function PanierContent() {
       data: { user },
     } = await supabase.auth.getUser()
 
-    const { data: order, error } = await supabase
-      .from('orders')
-      .insert({
-        order_number,
-        user_id: user?.id || null,
-        customer_first_name: values.first_name,
-        customer_last_name: values.last_name,
-        customer_email: values.email,
-        customer_phone: values.phone,
-        shipping_address: values.address,
-        shipping_city: values.city,
-        payment_method: 'cod',
-        notes: values.notes || null,
-        subtotal,
-        shipping_cost: 0,
-        total: subtotal,
-      })
-      .select()
-      .single()
+    const orderId = crypto.randomUUID()
 
-    if (error || !order) {
+    const { error } = await supabase.from('orders').insert({
+      id: orderId,
+      order_number,
+      user_id: user?.id || null,
+      customer_first_name: values.first_name,
+      customer_last_name: values.last_name,
+      customer_email: values.email,
+      customer_phone: values.phone,
+      shipping_address: values.address,
+      shipping_city: values.city,
+      payment_method: 'cod',
+      notes: values.notes || null,
+      subtotal,
+      shipping_cost: 0,
+      total: subtotal,
+    })
+
+    if (error) {
       setSubmitError(true)
       return
     }
 
     const orderItems = items.map((item) => ({
-      order_id: order.id,
+      order_id: orderId,
       product_id: item.productId,
       product_name: item.name,
       color: item.color || null,
