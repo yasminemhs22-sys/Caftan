@@ -70,7 +70,17 @@
     "selectSize": "المقاس",
     "availability": "التوفر",
     "addToWishlist": "أضف إلى المفضلة",
-    "removeFromWishlist": "إزالة من المفضلة"
+    "removeFromWishlist": "إزالة من المفضلة",
+    "orderNow": "اطلبي الآن",
+    "searchWilaya": "ابحثي عن ولاية...",
+    "noWilayaFound": "لم يتم العثور على ولاية",
+    "commune": "البلدية",
+    "deliveryType": "طريقة التوصيل",
+    "domicile": "توصيل للمنزل",
+    "bureau": "استلام من المكتب",
+    "shippingCost": "التوصيل",
+    "confirmOrder": "تأكيد الطلب",
+    "selectWilayaError": "الرجاء اختيار ولايتك."
   },
   "inquiryForm": {
     "title": "لديك سؤال عن هذا المنتج؟",
