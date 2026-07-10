@@ -70,7 +70,17 @@
     "selectSize": "Taille",
     "availability": "Disponibilité",
     "addToWishlist": "Ajouter aux favoris",
-    "removeFromWishlist": "Retirer des favoris"
+    "removeFromWishlist": "Retirer des favoris",
+    "orderNow": "Commander maintenant",
+    "searchWilaya": "Rechercher une wilaya...",
+    "noWilayaFound": "Aucune wilaya trouvée",
+    "commune": "Commune",
+    "deliveryType": "Mode de livraison",
+    "domicile": "À domicile",
+    "bureau": "Au bureau",
+    "shippingCost": "Livraison",
+    "confirmOrder": "Confirmer la commande",
+    "selectWilayaError": "Merci de sélectionner votre wilaya."
   },
   "inquiryForm": {
     "title": "Une question sur cet article ?",
@@ -109,6 +119,7 @@
     "notes": "Notes (optionnel)",
     "paymentMethod": "Mode de paiement",
     "cod": "Paiement à la livraison",
+    "codOnlyNote": "Paiement en espèces à la livraison.",
     "bankTransfer": "Virement bancaire",
     "online": "Paiement en ligne par carte",
     "redirecting": "Redirection vers le paiement...",
